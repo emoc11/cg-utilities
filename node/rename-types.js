@@ -24,13 +24,19 @@ function renameTypesInFile(filePath) {
 
 	const typeNames = extractTypeNames(fileContent);
 
+	console.group(
+		'\x1b[1;36m%s\x1b[0m',
+		`\u2699 File : ${path.basename(filePath)}`
+	);
+
 	let modifiedContent = fileContent.replace(/\b(\w+)\b/g, (match) => {
 		if (typeNames.has(match) && !match.startsWith(prefix)) {
-			console.log('\x1b[2;3;36m%s\x1b[0m', `\u2937 ${prefix}${match}`);
 			return `${prefix}${match}`;
 		}
 		return match;
 	});
+
+	console.groupEnd();
 
 	fs.writeFileSync(filePath, modifiedContent);
 }
@@ -39,7 +45,11 @@ function processTypes() {
 	fs.readdirSync(distDir).forEach((file) => {
 		const filePath = path.join(distDir, file);
 
-		if (filePath.endsWith('.d.ts')) {
+		if (
+			filePath.endsWith('.d.ts') ||
+			filePath.endsWith('.d.cts') ||
+			filePath.endsWith('.d.mts')
+		) {
 			renameTypesInFile(filePath);
 		}
 	});
