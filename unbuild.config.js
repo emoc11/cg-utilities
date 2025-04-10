@@ -6,7 +6,7 @@ export default {
 	sourcemap: true,
 	declaration: true,
 	clean: true,
-	// quiet: true,
+	quiet: true,
 	rollup: {
 		emitCJS: true,
 		dts: {
