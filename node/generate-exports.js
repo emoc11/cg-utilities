@@ -26,7 +26,6 @@ function generateExports() {
 	);
 
 	console.groupEnd();
-	console.log('\x1b[1;32m%s\x1b[0m', '\u2705 Done');
 
 	const packageJsonPath = path.resolve(__dirname, '../package.json');
 	const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, 'utf-8'));
@@ -53,7 +52,6 @@ function generateExports() {
 	fs.writeFileSync(packageJsonPath, JSON.stringify(packageJson, null, 4));
 
 	console.groupEnd();
-	console.log('\x1b[1;32m%s\x1b[0m', '\u2705 Done');
 }
 
 console.group('\x1b[1;36m%s\x1b[0m', '\u2699 EXPORTS GENERATIONS');
