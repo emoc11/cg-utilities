@@ -36,7 +36,6 @@ function renameTypesInFile(filePath) {
 		return match;
 	});
 
-	console.log('\x1b[1;32m%s\x1b[0m', '\u2705 Done');
 	console.groupEnd();
 
 	fs.writeFileSync(filePath, modifiedContent);
