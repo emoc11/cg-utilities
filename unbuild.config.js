@@ -1,5 +1,5 @@
 export default {
-	entries: ['src/index/dsds'],
+	entries: ['src/index'],
 	output: {
 		exports: 'named',
 	},
