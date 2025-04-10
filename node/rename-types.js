@@ -4,7 +4,7 @@ import path from 'path';
 const __dirname = path.dirname(new URL(import.meta.url).pathname);
 
 const distDir = path.resolve(__dirname, '../dist');
-const prefix = 'CGTYPE';
+const prefix = 'Emoc11Utils';
 
 function extractTypeNames(fileContent) {
 	const typeNames = new Set();

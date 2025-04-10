@@ -50,7 +50,7 @@ function generateExports() {
 		console.log('\x1b[2;3;36m%s\x1b[0m', `\u2937 Added ${base}`);
 	});
 
-	fs.writeFileSync(packageJsonPath, JSON.stringify(packageJson, null, 2));
+	fs.writeFileSync(packageJsonPath, JSON.stringify(packageJson, null, 4));
 
 	console.groupEnd();
 	console.log('\x1b[1;32m%s\x1b[0m', '\u2705 Done');

@@ -1,6 +1,6 @@
 {
-	"name": "cg-utilities",
-	"version": "1.0.0",
+	"name": "emoc11-utilities",
+	"version": "0.1.1",
 	"description": "Utilitaires TypeScript modulaires avec unbuild",
 	"main": "./dist/index.cjs",
 	"module": "./dist/index.mjs",
@@ -37,7 +37,9 @@
 		"utils",
 		"typescript",
 		"easing",
-		"modular"
+		"modular",
+		"three",
+		"threejs"
 	],
 	"author": "Come Gaillard",
 	"license": "MIT",
