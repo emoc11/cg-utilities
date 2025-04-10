@@ -1,0 +1,40 @@
+{
+	"compilerOptions": {
+		"target": "ES2020",
+		"lib": ["esnext", "dom", "dom.iterable", "webworker"],
+		"allowJs": true,
+		"skipLibCheck": true,
+		"strict": true,
+		"noEmit": true,
+		"esModuleInterop": true,
+		"module": "esnext",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"jsx": "preserve",
+		"incremental": true, // Activation de la compilation incrémentielle
+		"tsBuildInfoFile": "./build.tsbuildinfo", // Stocke le fichier d'informations de build incrémentiel
+		"plugins": [
+			//   {
+			//     "name": "next"
+			//   }
+		],
+		"paths": {
+			// "/*": ["./*"],  // Alias commenté pour le moment
+			// "features@components/*": ["./features/components/*"],
+			// "features@ecrin/*": ["./features/ecrin/*"],
+			// "features@hooks/*": ["./features/hooks/*"],
+			// "features@pages/*": ["./features/pages/*"],
+			// "features@threejsjourney/*": ["./features/components/threejs-journey/*"]
+		}
+	},
+	"files": ["./global.d.ts"],
+	"include": [
+		"next-env.d.ts",
+		"**/*.ts",
+		"**/*.tsx",
+		".next/types/**/*.ts",
+		"next.config.js"
+	],
+	"exclude": ["node_modules", "dist"]
+}
