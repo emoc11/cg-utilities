@@ -26,7 +26,7 @@ function renameTypesInFile(filePath) {
 
 	console.group(
 		'\x1b[1;36m%s\x1b[0m',
-		`\u2699 File : ${path.basename(filePath)}`
+		`\u2937 File : ${path.basename(filePath)}`
 	);
 
 	let modifiedContent = fileContent.replace(/\b(\w+)\b/g, (match) => {
