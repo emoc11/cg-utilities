@@ -12,6 +12,11 @@
             "require": "./dist/index.cjs",
             "types": "./dist/index.d.ts"
         },
+        "./CharacterController": {
+            "import": "./dist/CharacterController.mjs",
+            "require": "./dist/CharacterController.cjs",
+            "types": "./dist/CharacterController.d.ts"
+        },
         "./easingUtils": {
             "import": "./dist/easingUtils.mjs",
             "require": "./dist/easingUtils.cjs",

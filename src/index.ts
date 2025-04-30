@@ -1,3 +1,3 @@
-export * from './easingUtils';
-export * from './threeUtils';
-export * from './CharacterController';
+	export * from './CharacterController';
+	export * from './easingUtils';
+	export * from './threeUtils';
