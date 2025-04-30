@@ -1,6 +1,6 @@
 {
 	"name": "emoc11-utilities",
-	"version": "0.1.2",
+	"version": "0.1.0002",
 	"description": "Utilitaires TypeScript modulaires avec unbuild",
 	"main": "./dist/index.cjs",
 	"module": "./dist/index.mjs",
